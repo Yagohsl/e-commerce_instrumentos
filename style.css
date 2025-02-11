@@ -1,0 +1,33 @@
+.img-fluid{
+    height: 680px;
+}
+.navbar{
+    margin-bottom: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.nav-item, .nav-link{
+    margin-left: 10%;
+    color: #ffff;
+}
+.nav-item:hover, .active{
+    text-decoration: underline #C68642 2px;
+}
+
+.dropdown-item:active{
+    background-color:#1C3D5A;
+}
+
+.btn{
+    font-weight: 600;
+
+}
+.user{
+    text-decoration: none;
+    margin-right: 7%;
+    list-style-type: none;
+}
