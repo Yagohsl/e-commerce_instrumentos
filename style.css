@@ -7,15 +7,27 @@
     padding-bottom: 1%;
     font-size: 1.2rem;
     font-weight: 600;
-    background-color: #1B1B1B;
+    transition: background-color 0.3s ease;
 
+}
+.display-grid{
+  display:flex;
+  justify-content: center;
+  
+}
+.card-maisvendidos{
+  
+  gap: 40px;
+}
+.navbar.scrolled {
+  background-color: #1b1b1b;  /* Cor de fundo desejada */
 }
 .nav-item, .nav-link{
 
     color: #ffff;
 }
 .nav-item:hover, .active{
-    background-color: #3E92CC;
+    background-color: #45b2ff;
     border-radius: 8px;
 }
 
@@ -32,7 +44,8 @@
     background-color: #45b2ff;
 }
 .user{
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-decoration: none;
     list-style-type: none;
 }
@@ -97,6 +110,7 @@
     padding-top: 10%;
     text-align: center;
     font-weight: 600;
+    padding-bottom: 3%;
   }
   
 
@@ -105,7 +119,7 @@
         }
 
      
-        .texto, .texto-2 {
+        .texto-1, .texto-2, .texto-3 {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -118,11 +132,130 @@
             border-radius: 8px;
             width: 70%;
         }
+.texto-1{
+    top: 34%;
+    width: 100%;
+    font-size: 2rem;
+}
 .texto-2{
     top: 70%;
     width: 25%;
 }
+.texto-3{
+  top: 50%;
+  width: 40%;
+}
 
 .intro-grid{
-    display: grid;
+  display: grid;
+}
+
+.btn-card{
+  display: flex;
+}
+.card-title{
+  text-transform: uppercase;
+}
+.card{
+  transition: transform 0.3s ease-in-out; /* Transição suave de 0.3 segundos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+  
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Coloca o conteúdo no topo e o botão na parte inferior */
+}
+
+.btn-comprar {
+  margin-top: auto; /* Empurra o botão para a parte inferior */
+}
+
+.card:hover{
+    transform: scale(1.05); /* Aumenta o tamanho em 5% ao passar o mouse */
+ 
+}
+
+.card-clickable{
+  text-decoration: none;
+  color: #000;
+
+}
+
+/*botao offcanvas*/
+
+.open-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/*menu off-canvas */
+.off-canvas {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: 0.3s;
+  padding-top: 60px;
+  overflow-y: auto;
+}
+
+
+.off-canvas ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.off-canvas li {
+  padding: 8px 16px;
+  text-align: left;
+}
+
+.off-canvas a {
+  color: white;
+  text-decoration: none;
+}
+
+.off-canvas a:hover {
+  background-color: #575757;
+}
+.btn-off{
+  display: block;       /* Faz o botão ocupar toda a largura disponível */
+  margin: 10px auto; 
+}
+
+/*botão de fechar */
+.close-btn {
+  font-size: 30px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#totalPrice{
+  position: relative;
+  text-align: center;
+}
+
+.produtos-iniciante{
+  display: flex;
+}
+.product{
+  margin-right: 20px;
+  margin-left: 20px;
+
+}
+
+footer{
+  padding-top: 10%;
+  background-color: #1b1b1b;
 }

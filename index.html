@@ -10,11 +10,12 @@
 <body>
     
     <head>
+        <!--NAVBAR MENU-->
         <nav class="navbar fixed-top navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Loja de Instrumentos</a>
+                <a class="navbar-brand" href="#">Logo</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span> 
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
@@ -32,10 +33,11 @@
                             <li><a class="dropdown-item" href="#">Teclados</a></li>
                             <li><a class="dropdown-item" href="#">Baterias</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Outros</a></li>
+                            <li><a class="dropdown-item" href="#">Áudio e acessórios</a></li>
                         </ul>
                     </li>
                 </ul>
+               
                 <li class=" user dropdown">
                     <a  data-bs-toggle="dropdown" href="#"><img src="./assets/user.png" width="50%"></a>
                     <ul class="dropdown-menu">
@@ -44,6 +46,26 @@
 
                         </ul>
                 </li>
+                <button class="open-btn" onclick="openMenu()"><img src="./assets/cart.png" width="50%" ></button>
+
+                <!--MENU OFF-CANVAS-->
+                <div class="off-canvas" id="menu">
+                    <button class="close-btn" onclick="closeMenu()">Fechar</button>
+                    <ul>
+                    <li><a href="#">Pedidos</a></li>
+                    </ul>
+                    <div id="cartItems">
+
+                    </div>
+               
+                <p id="totalPrice">Total: R$ 0,00</p>
+                <a href="#" class="btn btn-off">Finalizar</a>
+          
+                </div>
+              
+                
+
+                
                 <form class="d-flex form-width" role="search">
                     <input class="form-control me-2" type="search" placeholder="Pesquisar produto" aria-label="Search">
                     <button class="btn " type="submit">Buscar</button>
@@ -51,6 +73,7 @@
             </div>
         </div>
     </nav>
+
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="4500">
@@ -64,8 +87,9 @@
             </div>
             <div class="intro-grid">
 
-                <h1 class="texto">Compre na melhor loja de instrumentos musicais do Brasil!</h1>
-                <button class="texto-2 btn " type="submit">Cadastre-se</button>
+                <h1 class="texto-1">Transforme sua música, transforme sua vida!</h1>
+                <h1 class="texto-3">Compre na melhor loja de instrumentos musicais do Brasil!</h1>
+                <a class="texto-2 btn " type="submit" href="./user/cadastro.html">Cadastre-se para Comprar</a>
             </div>
 
         </div>
@@ -124,20 +148,271 @@
         <img src="./assets/SIGMA.png">
         <img src="./assets/squier-by-fender.webp">
         <img src="./assets/tagima.webp">
-
-
-
-
-
-
-
-
-
-
     </div>
-    
 </div>
 
+<h1 class="title-bold">Iniciante na música? Aqui estão alguns instrumentos para iniciantes</h1>
+
+<!--Produtos-->
+<div class="produtos-iniciante">
+
+    <div class="card product" style="width: 18rem;">
+        <a href="#"class="card-clickable">
+
+            <img src="https://images.tcdn.com.br/img/img_prod/1033692/180_violao_yamaha_classico_acustico_c40m_ii_nylon_natural_fosco_7029_1_8eeee9462b15cc3e1756fdc470905a02.jpg" class="card-img-top" alt="Violão Yamaha Clássico Acústico C40m II Nylon Natural Fosco">
+            <div class="card-body">
+                <h5 class="card-title">Violão Yamaha Clássico Acústico C40m II Nylon Natural Fosco</h5>
+                <p class="card-text">R$809,10</p>
+                <a  class="btn btn-primary btn-comprar" onclick="openMenu(), addToCart('Violão Yamaha Clássico Acústico C40m II Nylon Natural Fosco', 809.10, 'https://images.tcdn.com.br/img/img_prod/1033692/180_violao_yamaha_classico_acustico_c40m_ii_nylon_natural_fosco_7029_1_8eeee9462b15cc3e1756fdc470905a02.jpg')">Comprar</a>
+            </div>
+        </a>
+</div>
+
+<div class="card product" style="width: 18rem;">
+    <a href="#"class="card-clickable">
+        <img src="https://madeinbrazil.fbitsstatic.net/img/p/teclado-arranjador-casio-ct-s200-casiotone-61-teclas-branco-127952/314437.jpg?w=800&h=800&v=no-value" class="card-img-top" alt="Teclado Arranjador Casio CT-S200 Casiotone 61 Teclas - Branco">
+        <div class="card-body">
+        <h5 class="card-title">Teclado Arranjador Casio CT-S200 Casiotone 61 Teclas - Branco</h5>
+        <p class="card-text">R$742,21</p>
+        <a  class="btn btn-primary btn-comprar" onclick="openMenu(), addToCart('Teclado Arranjador Casio CT-S200 Casiotone 61 Teclas - Branco', 742.21, 'https://madeinbrazil.fbitsstatic.net/img/p/teclado-arranjador-casio-ct-s200-casiotone-61-teclas-branco-127952/314437.jpg?w=800&h=800&v=no-value')">Comprar</a>
+        </div>
+    </a>
+</div>
+
+<div class="card product" style="width: 18rem;">
+    <a href="#"class="card-clickable">
+        <img src="https://images.tcdn.com.br/img/img_prod/1033692/180_bateria_premium_dx722_wr_vinho_com_banco_pratos_e_pedal_5219_1_4a8608715903152e6defea315dab9a2f.jpg" class="card-img-top" alt="Bateria Premium Dx722 WR Vinho Com Banco Pratos E Pedal">
+        <div class="card-body">
+        <h5 class="card-title">Bateria Premium Dx722 WR Vinho Com Banco Pratos E Pedal</h5>
+        <p class="card-text">R$2.993,40</p>
+        <a  class="btn btn-primary btn-comprar" onclick="openMenu(), addToCart('Bateria Premium Dx722 WR Vinho Com Banco Pratos E Pedal', 2993.40, 'https://images.tcdn.com.br/img/img_prod/1033692/180_bateria_premium_dx722_wr_vinho_com_banco_pratos_e_pedal_5219_1_4a8608715903152e6defea315dab9a2f.jpg')">Comprar</a>
+        </div>
+        </a>
+</div>
+
+<div class="card product" style="width: 18rem;">
+    <a href="#"class="card-clickable">
+        <img src="https://images.tcdn.com.br/img/img_prod/1033692/180_gaita_de_boca_harmonica_hohner_silver_star_504_20_com_estojo_4015_1_41f3fd74331e7439f653b095db60a229.jpg" class="card-img-top" alt="Gaita De Boca Harmônica Hohner Silver Star 504/20 Com Estojo C (Dó)">
+        <div class="card-body">
+        <h5 class="card-title">Gaita De Boca Harmônica Hohner Silver Star 504/20 Com Estojo C (Dó)</h5>
+        <p class="card-text">R$109,99</p>
+        <a  class="btn btn-primary btn-comprar" onclick="openMenu(), addToCart('Gaita De Boca Harmônica Hohner Silver Star 504/20 Com Estojo C (Dó)', 109.99, 'https://images.tcdn.com.br/img/img_prod/1033692/180_gaita_de_boca_harmonica_hohner_silver_star_504_20_com_estojo_4015_1_41f3fd74331e7439f653b095db60a229.jpg')">Comprar</a>
+        </div>
+        </a>
+</div>
+<div class="card product" style="width: 18rem;">
+    <a href="#"class="card-clickable">
+        <img src="https://images.tcdn.com.br/img/img_prod/1033692/90_guitarra_stratocaster_tagima_2s_1h_fx_escala_escura_escudo_bk_sixmart_mdsv_17355_1_80cc1fea2eceb53adac8282ad836b524.jpg" class="card-img-top" alt="GUITARRA STRATOCASTER TAGIMA 2S 1H FX ESCALA ESCURA ESCUDO BK SIXMART MDSV">
+        <div class="card-body">
+        <h5 class="card-title">GUITARRA STRATOCASTER TAGIMA 2S 1H FX ESCALA ESCURA ESCUDO BK SIXMART MDSV</h5>
+        <p class="card-text">R$1.458,00</p>
+        <a  class="btn btn-primary btn-comprar" onclick="openMenu(), addToCart('GUITARRA STRATOCASTER TAGIMA 2S 1H FX ESCALA ESCURA ESCUDO BK SIXMART MDSV', 1458.00, 'https://images.tcdn.com.br/img/img_prod/1033692/90_guitarra_stratocaster_tagima_2s_1h_fx_escala_escura_escudo_bk_sixmart_mdsv_17355_1_80cc1fea2eceb53adac8282ad836b524.jpg')">Comprar</a>
+        </div>
+        </a>
+</div>
+
+
+</div>
+
+<h1 class="title-bold">Conheça nossas categorias de instrumentos</h1>
+<div class="display-grid">
+
+
+<div class="card product " style="width: 18rem;">
+    <a href="#"class="card-clickable">
+    <img src="https://imgs.search.brave.com/X0uKlAjvFHGYf-YZYydxX24ZonsyBnU-FMkJF4oygYw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly92aW9s/YW9icmFzaWwuY29t/LmJyL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIzLzA2L1Zpc3Rh/LXN1cGVyaW9yLWRv/LXZpb2xhby5qcGc" height="210px"class="card-img-top" alt="Violão">
+    <div class="card-body">
+      <p class="card-text">Corda</p>
+    </div>
+    </a>
+  </div>
+
+<div class="card product " style="width: 18rem;">
+    <a href="#"class="card-clickable">
+    <img src="https://images.unsplash.com/photo-1561014816-50ce5acb5e73?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"height="210px" class="card-img-top" alt="Piano">
+    <div class="card-body">
+      <p class="card-text">Tecla</p>
+    </div>
+    </a>
+  </div>
+
+<div class="card product " style="width: 18rem;">
+    <a href="#"class="card-clickable">
+    <img src="https://images.unsplash.com/photo-1627411187044-cc7a4daaca7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dHJvbWJldGF8ZW58MHx8MHx8fDA%3D"height="210px" class="card-img-top" alt="Trombeta">
+    <div class="card-body">
+      <p class="card-text">Sopro</p>
+    </div>
+    </a>
+</div>
+
+<div class="card product " style="width: 18rem;">
+    <a href="#"class="card-clickable">
+    <img src="https://images.unsplash.com/photo-1571327073757-71d13c24de30?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"height="210px" class="card-img-top" alt="Bateria">
+    <div class="card-body">
+      <p class="card-text">Bateria</p>
+    </div>
+    </a>
+  </div>
+
+<div class="card product " style="width: 18rem;">
+    <a href="#"class="card-clickable">
+    <img src="https://images.unsplash.com/photo-1620201330098-28c9679957eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1pY3JvZm9uZXxlbnwwfHwwfHx8MA%3D%3D"height="210px" class="card-img-top" alt="Microfone">
+    <div class="card-body">
+      <p class="card-text">Áudio e acessórios</p>
+    </div>
+    </a>
+  </div>
+
+</div>
+<h1 class="title-bold">Os mais vendidos</h1>
+
+<div class="display-grid card-maisvendidos">
+
+    <div class="card product" style="width: 18rem;">
+        <a href="#"class="card-clickable">
+            <img src="https://images.tcdn.com.br/img/img_prod/1033692/90_guitarra_stratocaster_tagima_2s_1h_fx_escala_escura_escudo_bk_sixmart_mdsv_17355_1_80cc1fea2eceb53adac8282ad836b524.jpg" class="card-img-top" alt="GUITARRA STRATOCASTER TAGIMA 2S 1H FX ESCALA ESCURA ESCUDO BK SIXMART MDSV">
+            <div class="card-body">
+                <h5 class="card-title">GUITARRA STRATOCASTER TAGIMA 2S 1H FX ESCALA ESCURA ESCUDO BK SIXMART MDSV</h5>
+                <p class="card-text">R$1.458,00</p>
+                <a  class="btn btn-primary btn-comprar" onclick="openMenu(), addToCart('GUITARRA STRATOCASTER TAGIMA 2S 1H FX ESCALA ESCURA ESCUDO BK SIXMART MDSV', 1458.00, 'https://images.tcdn.com.br/img/img_prod/1033692/90_guitarra_stratocaster_tagima_2s_1h_fx_escala_escura_escudo_bk_sixmart_mdsv_17355_1_80cc1fea2eceb53adac8282ad836b524.jpg')">Comprar</a>
+            </div>
+        </a>
+    </div>
+
+    <div class="card product" style="width: 18rem;">
+        <a href="#"class="card-clickable">
+            <img src="https://madeinbrazil.fbitsstatic.net/img/p/encordoamento-violao-martin-aco-ma535fx-011-authentic-acoustic-flexible-core-phosphor-bronze-129319/342380.jpg?w=800&h=800&v=no-value" class="card-img-top" alt="Encordoamento Violão Martin Aço MA535FX 011 Authentic Acoustic Flexible Core Phosphor Bronze">
+            <div class="card-body">
+                <h5 class="card-title">Encordoamento Violão Martin Aço MA535FX 011 Authentic Acoustic Flexible Core Phosphor Bronze</h5>
+                <p class="card-text">R$71,00</p>
+                <a  class="btn btn-primary btn-comprar" onclick="openMenu(), addToCart('Encordoamento Violão Martin Aço MA535FX 011 Authentic Acoustic Flexible Core Phosphor Bronze', 71, 'https://madeinbrazil.fbitsstatic.net/img/p/encordoamento-violao-martin-aco-ma535fx-011-authentic-acoustic-flexible-core-phosphor-bronze-129319/342380.jpg?w=800&h=800&v=no-value')">Comprar</a>
+            </div>
+        </a>
+    </div>
+
+    <div class="card product" style="width: 18rem;">
+        <a href="#"class="card-clickable">
+            <img src="https://images.tcdn.com.br/img/img_prod/1033692/90_piano_digital_fp_10_bk_roland_88_teclas_c_estante_partitura_8913_2_da4b0fc226fbe400c4897d3997777c76.jpg" class="card-img-top" alt="Piano Digital Roland FP-10 Preto Com Estante de Partitura">
+            <div class="card-body">
+                <h5 class="card-title">Piano Digital Roland FP-10 Preto Com Estante de Partitura</h5>
+                <p class="card-text">R$3.958,20</p>
+                <a  class="btn btn-primary btn-comprar" onclick="openMenu(), addToCart('Piano Digital Roland FP-10 Preto Com Estante de Partitura', 3958.2, 'https://images.tcdn.com.br/img/img_prod/1033692/90_piano_digital_fp_10_bk_roland_88_teclas_c_estante_partitura_8913_2_da4b0fc226fbe400c4897d3997777c76.jpg')">Comprar</a>
+            </div>
+        </a>
+    </div>
+
+    <div class="card product" style="width: 18rem;">
+        <a href="#"class="card-clickable">
+            <img src="https://madeinbrazil.fbitsstatic.net/img/p/violao-tagima-eletroacustico-aco-new-england-eq-dkmop-130651/343721-1.jpg?w=800&h=800&v=no-value" class="card-img-top" alt="Violão Tagima Eletroacústico Aço New England EQ DKMOP">
+            <div class="card-body">
+                <h5 class="card-title">Violão Tagima Eletroacústico Aço New England EQ DKMOP</h5>
+                <p class="card-text">R$1.196,10</p>
+                <a  class="btn btn-primary btn-comprar" onclick="openMenu(), addToCart('Violão Tagima Eletroacústico Aço New England EQ DKMOP', 1196.1, 'https://madeinbrazil.fbitsstatic.net/img/p/violao-tagima-eletroacustico-aco-new-england-eq-dkmop-130651/343721-1.jpg?w=800&h=800&v=no-value')">Comprar</a>
+            </div>
+        </a>
+    </div>
+
+</div>
+    
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Empresa
+            </h6>
+            <p>
+                Desde 1993 transformando sua música em seus sonhos. Quando o assunto é música, nós não ficamos de fora.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Produtos
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Corda</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Sopro</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Tecla</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Bateria</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Áudio e acessórios</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Links úteis
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Contato</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Sobre</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Termos de uso</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Política de Privacidade</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+            <p><i class="fas fa-home me-3"></i> Hortolândia, SP</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              loja@yahoo.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 19 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 11 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2025 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Loja</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+<script src="./script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
