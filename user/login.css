@@ -4,6 +4,11 @@ form{
     margin-top:7% ;
 }
 
+.btn-continuar{
+    color: #fff;
+    text-decoration: none;
+}
+
 .title-form{
     padding-bottom: 50px;
 }
@@ -21,9 +26,4 @@ footer{
 .display-flex{
     display:flex    ;
     justify-content: space-between;
-}
-
-.btn-continuar{
-    color: #fff;
-    text-decoration: none;
 }

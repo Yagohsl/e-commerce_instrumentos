@@ -37,11 +37,13 @@
 
 .btn{
     font-weight: 600;
+    color: #fff;
     background-color: #3E92CC;
 
 }
 .btn:hover{
     background-color: #45b2ff;
+    color: #000;
 }
 .user{
     padding-top: 10px;
@@ -52,9 +54,7 @@
 .user:hover{
     background-color: none;
 }
-.btn{
-    color:#fff ;
-}
+
 
 
 .logos{
@@ -248,6 +248,7 @@
 
 .produtos-iniciante{
   display: flex;
+  justify-content: space-around;
 }
 .product{
   margin-right: 20px;
@@ -258,4 +259,8 @@
 footer{
   padding-top: 10%;
   background-color: #1b1b1b;
+}
+
+.pedidos:hover{
+  background-color: none;
 }
