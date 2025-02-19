@@ -53,7 +53,7 @@ function updateCart() {
   cart.forEach(item => {
     const itemElement = document.createElement("div");
     itemElement.classList.add("cart-item");
-    itemElement.innerHTML = `<div class="display-grid"><img src="${item.image}" width= "30%" style="border-radius: 10px; padding-left:5px; padding-right:10px; padding-bottom:10px;"> ${item.name}<br>
+    itemElement.innerHTML = `<div class="display-flex"><img src="${item.image}" width= "30%" style="border-radius: 10px; padding-left:5px; padding-right:10px; padding-bottom:10px; "> ${item.name}<br>
       
         R$ ${item.price.toFixed(2)}</div>
       `;
@@ -65,4 +65,7 @@ function updateCart() {
   totalPriceElement.innerHTML = `Total: R$ ${totalPrice.toFixed(2)}`;
 }
 
-  
+// Iniciar o dropdown manualmente via JS
+var dropdownElement = document.getElementById('navbarDropdown');
+var dropdown = new bootstrap.Dropdown(dropdownElement);
+dropdown.show(); // Para forçar o dropdown a abrir

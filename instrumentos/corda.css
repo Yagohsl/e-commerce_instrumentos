@@ -37,22 +37,18 @@
     background-color: transparent;
 }
 
-.menu-title{
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding-left: 0;
-    padding-bottom: 8%;
-    text-align: center;
-    margin: 0 auto;
-}
-.menu-title:hover{
-    color: #fff;
-}
 
 
 .cards-products{
+    width: 82%;
     margin-top: 10%;
     display: flex;
-    
+    justify-content:flex-start; /* Alinha horizontalmente */
+    gap: 30px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Para permitir que os cards quebrem para uma nova linha, se necessário */
 }
+
+.card-title{
+    font-size: 1.2rem;
+}
+    

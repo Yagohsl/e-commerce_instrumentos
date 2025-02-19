@@ -10,15 +10,7 @@
     transition: background-color 0.3s ease;
 
 }
-.display-grid{
-  display:flex;
-  justify-content: center;
-  
-}
-.card-maisvendidos{
-  
-  gap: 40px;
-}
+
 .navbar.scrolled {
   background-color: #1b1b1b;  
 }
@@ -159,7 +151,7 @@
 .card{
   transition: transform 0.3s ease-in-out; /* Transição suave de 0.3 segundos */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
-  
+  margin-top: 5%;
 }
 .card-body {
   display: flex;
@@ -260,7 +252,113 @@ footer{
   padding-top: 10%;
   background-color: #1b1b1b;
 }
-
+.categorias{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .pedidos:hover{
   background-color: none;
+}
+
+.navbar-brand{
+  color: #fff;
+}
+
+.img-user{
+  width: 50%;
+}
+.navbar-toggler{
+  padding: 0;
+  
+}
+.navbar-toggler{
+  background-color:#45b2ff;
+  border: none;
+  box-shadow: none;
+}
+.display-flex{
+  display: flex;
+  justify-content: center;
+}
+
+.icons{
+  display: flex;
+}
+.dropdown{
+  position:a
+}
+.btn-instr{
+  margin-bottom: 100%;
+}
+
+.form-check-label{
+  color: #fff;
+}
+.form-check{
+margin-left: 8%;
+margin-bottom: 3%;
+}
+
+.menu-title{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding-left: 0;
+  padding-bottom: 8%;
+  text-align: center;
+  margin-top: 10%;
+}
+.menu-title:hover{
+  color: #fff;
+}
+
+
+@media(max-width: 1200px){
+  .produtos-iniciante{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+}
+@media (max-width: 1080px) {
+  .texto-3{
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  #btn-header{
+    font-size: 1.3rem;
+    padding: 1%;
+  }
+  .card-title{
+    font-size: 01rem;
+  }
+  .title-bold{
+    font-size: 1.8rem
+  }
+  .produtos-iniciante, .card-maisvendidos{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card{
+    margin-top: 4%;
+  }
+  
+}
+
+@media (max-width: 768px){
+  .navbar{
+    background-color: #1b1b1b;
+  }
+  #btn-header{
+    font-size: 1rem;
+  }
+  .img-user{
+    margin-left: 1%;
+  }
+  .img-cart{
+    margin-left: -3%;
+  }
+
+
 }
