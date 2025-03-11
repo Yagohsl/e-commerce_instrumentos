@@ -9,3 +9,12 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
     }
 });
 
+document.getElementById('searchForm').addEventListener('submit', function(event) {
+    event.preventDefault();  
+    const query = document.getElementById('searchBar').value;
+    if (query) {
+ 
+        window.location.href = `../cards/cards.html?search=${encodeURIComponent(query)}`;
+    }
+});
+

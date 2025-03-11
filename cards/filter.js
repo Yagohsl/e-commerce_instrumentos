@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const priceFilters = document.querySelectorAll(".price-filter");
     const checkboxes = document.querySelectorAll(".form-check-input[type='checkbox']");
-    const products = document.querySelectorAll(".card.product");
+    const products = document.querySelectorAll(".card");
 
     // Adiciona eventos para os filtros
     priceFilters.forEach(filter => filter.addEventListener("change", filterProducts));
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const matchesPrice = price >= minPrice && price <= maxPrice;
 
             if (matchesBrand && matchesPrice) {
-                product.style.display = "block";
+                product.style.display = "flex";
             } else {
                 product.style.display = "none";
             }
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     const categories = document.querySelectorAll(".category");
-    const cards = document.querySelectorAll(".card.product");
+    const cards = document.querySelectorAll(".card");
 
     categories.forEach(category => {
         category.addEventListener("click", function (e) {
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Se o título contém a categoria selecionada, mostra o card; senão, esconde
                 if (cardTitle.includes(selectedCategory)) {
-                    card.style.display = "block";
+                    card.style.display = "flex";
                 } else {
                     card.style.display = "none";
                 }
@@ -67,7 +67,7 @@ document.querySelector(".clean-filter").addEventListener("click", function () {
     document.querySelectorAll(".form-check-input").forEach(input => input.checked = false);
 
     // Exibe todos os produtos novamente
-    document.querySelectorAll(".card.product").forEach(card => card.style.display = "block");
+    document.querySelectorAll(".card").forEach(card => card.style.display = "flex");
 });
 
 document.querySelector(".clean-filter").addEventListener("click", function () {
@@ -86,7 +86,7 @@ const searchQuery = getQueryParam('search');
 // Aguarda o carregamento do DOM
 document.addEventListener("DOMContentLoaded", function () {
     const searchBar = document.getElementById("searchBar"); // Captura a barra de pesquisa
-    const productCards = document.querySelectorAll(".card.product"); // Captura todos os produtos
+    const productCards = document.querySelectorAll(".card"); // Captura todos os produtos
 
     // Função para filtrar os produtos
     function filterProducts(searchTerm) {
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
         productCards.forEach(card => {
             const title = card.querySelector(".card-title").textContent.toLowerCase(); // Captura o título do produto
             if (title.includes(searchTerm)) {
-                card.style.display = "block"; // Mostra os produtos que correspondem
+                card.style.display = "flex"; // Mostra os produtos que correspondem
             } else {
                 card.style.display = "none"; // Esconde os produtos que não correspondem
             }

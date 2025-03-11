@@ -152,6 +152,9 @@
   transition: transform 0.3s ease-in-out; /* Transição suave de 0.3 segundos */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
   margin-top: 5%;
+  margin-right: 20px;
+  margin-left: 20px;
+
 }
 .card-body {
   display: flex;
@@ -233,19 +236,18 @@
   right: 20px;
 }
 
+.categorias .card{
+  width: 16rem;
+}
+
 #totalPrice{
   position: relative;
   text-align: center;
 }
 
-.produtos-iniciante{
+.produtos{
   display: flex;
   justify-content: space-around;
-}
-.product{
-  margin-right: 20px;
-  margin-left: 20px;
-
 }
 
 footer{
@@ -315,7 +317,7 @@ margin-bottom: 3%;
 
 
 @media(max-width: 1200px){
-  .produtos-iniciante{
+  .produtos{
     flex-wrap: wrap;
     justify-content: flex-start;
   }
@@ -336,7 +338,7 @@ margin-bottom: 3%;
   .title-bold{
     font-size: 1.8rem
   }
-  .produtos-iniciante, .card-maisvendidos{
+  .produtos{
     flex-wrap: wrap;
     justify-content: center;
   }
