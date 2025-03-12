@@ -7,9 +7,7 @@
     color:#fff
 }
 
-.navbar-brand{
-    color : #fff
-}
+
 
 .card{
     width: 15rem;
@@ -19,7 +17,7 @@
 }
 .menu-left{
     background-color: #333333;
-    padding-top: 14%;
+    padding-top: 8%;
     width: 18%;
 }
 
@@ -47,7 +45,7 @@
 
 .cards-products{
     width: 90%;
-    margin-top: 10%;
+    margin-top: 8%;
     display: flex;
     justify-content:flex-start; /* Alinha horizontalmente */
     flex-wrap: wrap; /* Para permitir que os cards quebrem para uma nova linha, se necessário */

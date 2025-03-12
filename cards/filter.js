@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const selectedBrands = Array.from(checkboxes)
             .filter(checkbox => checkbox.checked)
-            .map(checkbox => checkbox.nextElementSibling.textContent.trim());
+            .map(checkbox => checkbox.nextElementSibling.textContent.trim().toLowerCase());
 
         products.forEach(product => {
             const priceText = product.querySelector(".card-text").innerText;
             const price = parseFloat(priceText.replace("R$", "").replace(".", "").replace(",", "."));
 
-            const title = product.querySelector(".card-title").textContent;
+            const title = product.querySelector(".card-title").textContent.toLowerCase();
 
             const matchesBrand = selectedBrands.length === 0 || selectedBrands.some(brand => title.includes(brand));
             const matchesPrice = price >= minPrice && price <= maxPrice;
