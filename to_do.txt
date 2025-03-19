@@ -1,18 +1,3 @@
-mudar paths da guia INSTRUMENTOS, USUARIO e CONTATO de:
-    cards
-    corda
-    sopro
-    audio
-    tecla
-    percurssao
 
-adicionar cards, marcas e categorias nas paginas
-    sopro
-    tecla
-    audio
-    percurssao
-    cards
-
-criar pagina CONTATO
 
 adicionar responsividade nas paginas
