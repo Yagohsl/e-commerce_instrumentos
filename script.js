@@ -20,13 +20,36 @@ window.onscroll = function() {
 
 // Função para abrir o menu
 function openMenu() {
-    document.getElementById("menu").style.right = "0";
-  }
+  const menu = document.getElementById("menu");
   
-  // Função para fechar o menu
-  function closeMenu() {
-    document.getElementById("menu").style.right = "-400px";
+  // Garante que o menu fique visível
+  menu.style.right = "0";
+  menu.style.display = "block";
+}
+
+function closeMenu() {
+  const menu = document.getElementById("menu");
+  
+  // Esconde o menu ao fechar
+  menu.style.right = "-100%";
+  setTimeout(() => {
+      menu.style.display = "none";
+  }, 300); // Aguarda o tempo da animação para ocultar
+}
+
+// Garante que o menu funcione mesmo após resize
+window.addEventListener("resize", function () {
+  const menu = document.getElementById("menu");
+
+  if (window.innerWidth > 768) {
+      menu.style.width = "400px";
+  } else {
+      menu.style.width = "100%";
   }
+});
+
+
+
 
   //CARRINHO
   let cart = []; // Carrinho de compras
@@ -65,7 +88,3 @@ function updateCart() {
   totalPriceElement.innerHTML = `Total: R$ ${totalPrice.toFixed(2)}`;
 }
 
-// Iniciar o dropdown manualmente via JS
-var dropdownElement = document.getElementById('navbarDropdown');
-var dropdown = new bootstrap.Dropdown(dropdownElement);
-dropdown.show(); // Para forçar o dropdown a abrir

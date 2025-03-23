@@ -38,19 +38,21 @@
                         </li>
                     </ul>
                    
-                    <li class=" user dropdown">
-                        <a  data-bs-toggle="dropdown" href="#"><img src="../assets/user.png" width="50%"></a>
-                        <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../user/cadastro.html">Cadastre-se</a></li>
-                                <li><a class="dropdown-item" href="../user/login.html">Logar</a></li>
-    
-                            </ul>
-                    </li>
-                    <button class="open-btn" onclick="openMenu()"><img src="../assets/cart.png" width="50%" ></button>
-    
+                    <div class="icons">
+
+                        <li class=" user dropdown">
+                          <a  data-bs-toggle="dropdown" href="#"><img src="../assets/user.png" class="img-user"></a>
+                          <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="../user/cadastro.html">Cadastre-se</a></li>
+                                  <li><a class="dropdown-item" href="../user/login.html">Logar</a></li>
+      
+                                </ul>
+                      </li>
+                      <button class="open-btn img-cart" onclick="openMenu()"><img src="../assets/cart.png" width="50%" ></button>
+                    </div>
                     <!--MENU OFF-CANVAS-->
                     <div class="off-canvas" id="menu">
-                        <button class="close-btn btn" onclick="closeMenu()">Fechar</button>
+                        <button class="close-btn btn" onclick="closeMenu()"><img src="../assets/close.png" class="img-close"></button>
                         <ul>
                         <li><a class="pedidos">Pedidos</a></li>
                         </ul>

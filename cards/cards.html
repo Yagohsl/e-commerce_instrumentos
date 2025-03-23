@@ -11,11 +11,229 @@
 <body>
 
             <!--NAVBAR MENU-->
-            <nav class="navbar fixed-top navbar-expand-lg ">
+            <nav class="navbar fixed-top navbar-expand-md ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="../index.html">Home</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span> 
+                    <div class="side-menu">
+                        <button class="btn btn-primary side-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Categorias</button>
+            
+                            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-header">
+                               
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><img src="../assets/close.png" class="img-close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="nav flex-column">
+            
+                                    <button class="btn clean-filter">Limpar filtros</button>
+                                    
+                                    <li class="nav-menu menu-title">
+                                        <a class=" disabled menu-title " aria-disabled="true">Categorias</a>
+                                    </li>
+                
+                                    <li class="nav-item menu-item">
+                                        <a class=" nav-menu" href="../instrumentos/corda.html">Corda</a>
+                                    </li>
+                                <li class="nav-item menu-item">
+                                  <a class=" nav-menu" href="../instrumentos/tecla.html">Teclas</a>
+                                </li>
+                                <li class="nav-item menu-item">
+                                  <a class=" nav-menu" href="../instrumentos/sopro.html">Sopro</a>
+                                </li>
+                                <li class="nav-item menu-item">
+                                    <a class="nav-menu" href="../instrumentos/percussao.html">Percussão</a>
+                                </li>
+                                <li class="nav-item menu-item">
+                                    <a class=" nav-menu" href="../instrumentos/audio.html">Áudio</a>
+                                </li>
+                         
+                                <hr>
+                                <li class="nav-menu menu-title">
+                                    <a class="disabled menu-title" aria-disabled="true">Filtrar por preço</a>
+                                </li>
+                                <div class="form-check">
+                                    <input class="form-check-input price-filter" type="radio" name="priceRange" id="price1" value="0-500">
+                                    <label class="form-check-label" for="price1">Abaixo de R$500</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input price-filter" type="radio" name="priceRange" id="price2" value="500-1000">
+                                    <label class="form-check-label" for="price2">De R$500 a R$1000</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input price-filter" type="radio" name="priceRange" id="price3" value="1001-2000">
+                                    <label class="form-check-label" for="price3">De R$1001 a R$2000</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input price-filter" type="radio" name="priceRange" id="price4" value="2001-5000">
+                                    <label class="form-check-label" for="price4">De R$2001 a R$5000</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input price-filter" type="radio" name="priceRange" id="price5" value="5000">
+                                    <label class="form-check-label" for="price5">Acima de R$5000</label>
+                                </div>
+                
+                
+                                <li class="nav-menu menu-title">
+                                    <a class=" disabled menu-title " aria-disabled="true">Filtrar por marca</a>
+                                </li>
+                
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Yamaha
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Gope
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Tagima
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Schelter
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      PHX
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Planet Waves
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Comica
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Behringer
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      M-Audio
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Dylan
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Esi
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Strike
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Premium
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Luen
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Contemporânea
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Rozini
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      PRS
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Cadenza
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Casio
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Eagle
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Roland
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                      <label class="form-check-label" for="flexCheckDefault">
+                                        Michael
+                                      </label>
+                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Tokai
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Hohner
+                                    </label>
+                                  </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Dolphin
+                                    </label>
+                                  </div>
+                            </ul>
+                            </div>
+                            </div>
+                            </div>
+                            
+                    <button class="navbar-toggler" id="btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="material-symbols-outlined" ><img src="../assets/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" width="40%"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
@@ -37,20 +255,21 @@
                             </ul>
                         </li>
                     </ul>
-                   
-                    <li class=" user dropdown">
-                        <a  data-bs-toggle="dropdown" href="#"><img src="../assets/user.png" width="50%"></a>
-                        <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../user/cadastro.html">Cadastre-se</a></li>
-                                <li><a class="dropdown-item" href="../user/login.html">Logar</a></li>
-    
-                            </ul>
-                    </li>
-                    <button class="open-btn" onclick="openMenu()"><img src="../assets/cart.png" width="50%" ></button>
-    
+                    <div class="icons">
+
+                        <li class=" user dropdown">
+                          <a  data-bs-toggle="dropdown" href="#"><img src="../assets/user.png" class="img-user"></a>
+                          <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="../user/cadastro.html">Cadastre-se</a></li>
+                                  <li><a class="dropdown-item" href="../user/login.html">Logar</a></li>
+      
+                                </ul>
+                      </li>
+                      <button class="open-btn img-cart" onclick="openMenu()"><img src="../assets/cart.png" width="50%" ></button>
+                    </div>
                     <!--MENU OFF-CANVAS-->
                     <div class="off-canvas" id="menu">
-                        <button class="close-btn btn" onclick="closeMenu()">Fechar</button>
+                        <button class="close-btn btn" onclick="closeMenu()"><img src="../assets/close.png" class="img-close"></button>
                         <ul>
                         <li><a class="pedidos">Pedidos</a></li>
                         </ul>
@@ -74,6 +293,7 @@
 
         <div class="page-content">
 
+            
             <div class ="menu-left">
                 
                 <ul class="nav flex-column">

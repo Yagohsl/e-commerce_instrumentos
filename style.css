@@ -192,16 +192,16 @@
 .off-canvas {
   position: fixed;
   top: 0;
-  right: -400px;
+  right: -100%;
   width: 400px;
   height: 100%;
   background-color: #333;
   color: white;
-  transition: 0.3s;
+  transition: right 0.3s ease-in-out;
   padding-top: 60px;
   overflow-y: auto;
+  display: none; /* Mantém oculto até ser chamado */
 }
-
 
 .off-canvas ul {
   list-style-type: none;
@@ -281,6 +281,7 @@ footer{
   background-color:#45b2ff;
   border: none;
   box-shadow: none;
+  width: 5rem;
 }
 .display-flex{
   display: flex;
@@ -314,6 +315,9 @@ margin-bottom: 3%;
 }
 .menu-title:hover{
   color: #fff;
+}
+.img-close{
+  width: 50%;
 }
 
 
@@ -350,6 +354,12 @@ margin-bottom: 3%;
 }
 
 @media (max-width: 768px){
+  .texto-1{
+    font-size: 1.7rem;
+  }
+  .texto-3{
+    font-size: 1.4rem;
+  }
   .navbar{
     background-color: #1b1b1b;
   }
@@ -362,6 +372,87 @@ margin-bottom: 3%;
   .img-cart{
     margin-left: -3%;
   }
+  .categorias .card, .card{
+    width: 10rem;
+  }
+
+  .categorias .card-img-top{
+    height: 10rem;
+  }
+  .produtos .card-title{
+    font-size: 0.9rem;
+  }
+  .produtos .card-text{
+    font-size: 0.7rem;
+  }
+  .title-bold{
+    font-size: 1.5rem;
+  }
+  .off-canvas{
+    width:100%;
+  }
 
 
+}
+@media(max-width: 660px){
+  .texto-1{
+    font-size: 1.5rem;
+  }
+  .texto-3{
+    font-size: 1.2rem;
+  }
+}
+@media(max-width: 570px){
+  .texto-1{
+    font-size: 1.3rem;
+  }
+  #btn-header{
+    font-size: 0.8rem;
+  }
+  .texto-3{
+    font-size: 1.0rem;
+  }
+}
+@media(max-width: 500px){
+  .texto-1{
+    font-size: 1rem;
+  }
+  #btn-header{
+    font-size: 0.6rem;
+  }
+  .texto-3{
+    font-size: 0.7rem;
+  }
+  .title-bold{
+    margin: 5px 10px;
+    font-size:1rem;
+  }
+  .categorias .card{
+    font-size: 0.8rem;
+    width:6rem;
+  }
+  .produtos .card-img-top{
+    width:6rem;
+    margin-left: 20px;
+
+  }
+  .card{
+    width: 9rem;
+  }
+  
+  .categorias .card-img-top,.card-img-top{
+    height: 6rem;
+  }
+  .card .card-title{
+    font-size:0.8rem
+  }
+  .btn-comprar{
+    font-size:0.7rem
+  }
+  .text-uppercase{
+    font-size: 0.8rem;
+  }
+  footer p{
+    font-size: 0.7rem;
+  }
 }

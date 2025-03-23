@@ -44,7 +44,7 @@
                 <div class="icons">
 
                   <li class=" user dropdown">
-                    <a  data-bs-toggle="dropdown" href="#"><img src="./assets/user.png" width="50%" class="img-user"></a>
+                    <a  data-bs-toggle="dropdown" href="#"><img src="./assets/user.png" class="img-user"></a>
                     <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./user/cadastro.html">Cadastre-se</a></li>
                             <li><a class="dropdown-item" href="./user/login.html">Logar</a></li>
@@ -55,18 +55,20 @@
               </div>
                 
                 <!--MENU OFF-CANVAS-->
-                <div class="off-canvas" id="menu">
-                    <button class="close-btn btn" onclick="closeMenu()">Fechar</button>
-                    <ul>
-                    <li><a class="pedidos">Pedidos</a></li>
-                    </ul>
-                    <div id="cartItems">
 
-                    </div>
+                
+                <div class="off-canvas" id="menu">
+                    <button class="close-btn btn" onclick="closeMenu()"><img src="./assets/close.png" class="img-close"></button>
+                    <ul>
+                      <li>
+                        <a class="pedidos">Pedidos</a>
+                      </li>
+                    </ul>
+
+                    <div id="cartItems"></div>
                
-                <p id="totalPrice">Total: R$ 0,00</p>
-                <a href="#" class="btn btn-off">Finalizar</a>
-          
+                    <p id="totalPrice">Total: R$ 0,00</p>
+                    <a href="#" class="btn btn-off">Finalizar</a>
                 </div>
               
                 
@@ -173,7 +175,7 @@
 </div>
 
 <div class="card" >
-    <a href="#"class="card-clickable">
+    <a href="./instrumentos/tecla.html"class="card-clickable">
       <img src="https://images.unsplash.com/photo-1561014816-50ce5acb5e73?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"height="210px" class="card-img-top" alt="Piano">
       <div class="card-body">
         <p class="card-text">Tecla</p>
@@ -182,7 +184,7 @@
   </div>
 
   <div class="card" >
-    <a href="#"class="card-clickable">
+    <a href="./instrumentos/sopro.html"class="card-clickable">
     <img src="https://images.unsplash.com/photo-1627411187044-cc7a4daaca7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dHJvbWJldGF8ZW58MHx8MHx8fDA%3D"height="210px" class="card-img-top" alt="Trombeta">
     <div class="card-body">
       <p class="card-text">Sopro</p>
@@ -191,7 +193,7 @@
 </div>
 
 <div class="card">
-    <a href="#"class="card-clickable">
+    <a href="./instrumentos/percussao.html"class="card-clickable">
       <img src="https://images.unsplash.com/photo-1571327073757-71d13c24de30?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"height="210px" class="card-img-top" alt="Bateria">
       <div class="card-body">
       <p class="card-text">Bateria</p>
@@ -200,7 +202,7 @@
 </div>
 
 <div class="card" >
-  <a href="#"class="card-clickable">
+  <a href="./instrumentos/audio.html"class="card-clickable">
     <img src="https://images.unsplash.com/photo-1620201330098-28c9679957eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1pY3JvZm9uZXxlbnwwfHwwfHx8MA%3D%3D"height="210px" class="card-img-top" alt="Microfone">
     <div class="card-body">
       <p class="card-text">Áudio e acessórios</p>
@@ -217,7 +219,7 @@
 <div class="produtos">
 
     <div class="card">
-        <a href="#"class="card-clickable">
+        <a href="#!"class="card-clickable">
 
             <img src="https://images.tcdn.com.br/img/img_prod/1033692/180_violao_yamaha_classico_acustico_c40m_ii_nylon_natural_fosco_7029_1_8eeee9462b15cc3e1756fdc470905a02.jpg" class="card-img-top" alt="Violão Yamaha Clássico Acústico C40m II Nylon Natural Fosco">
             <div class="card-body">
@@ -229,7 +231,7 @@
 </div>
 
 <div class="card">
-    <a href="#"class="card-clickable">
+    <a href="#!"class="card-clickable">
         <img src="https://madeinbrazil.fbitsstatic.net/img/p/teclado-arranjador-casio-ct-s200-casiotone-61-teclas-branco-127952/314437.jpg?w=800&h=800&v=no-value" class="card-img-top" alt="Teclado Arranjador Casio CT-S200 Casiotone 61 Teclas - Branco">
         <div class="card-body">
         <h5 class="card-title">Teclado Arranjador Casio CT-S200 Casiotone 61 Teclas - Branco</h5>
@@ -240,7 +242,7 @@
 </div>
 
 <div class="card">
-    <a href="#"class="card-clickable">
+    <a href="#!"class="card-clickable">
         <img src="https://images.tcdn.com.br/img/img_prod/1033692/180_bateria_premium_dx722_wr_vinho_com_banco_pratos_e_pedal_5219_1_4a8608715903152e6defea315dab9a2f.jpg" class="card-img-top" alt="Bateria Premium Dx722 WR Vinho Com Banco Pratos E Pedal">
         <div class="card-body">
         <h5 class="card-title">Bateria Premium Dx722 WR Vinho Com Banco Pratos E Pedal</h5>
@@ -251,7 +253,7 @@
 </div>
 
 <div class="card">
-    <a href="#"class="card-clickable">
+    <a href="#!"class="card-clickable">
         <img src="https://images.tcdn.com.br/img/img_prod/1033692/180_gaita_de_boca_harmonica_hohner_silver_star_504_20_com_estojo_4015_1_41f3fd74331e7439f653b095db60a229.jpg" class="card-img-top" alt="Gaita De Boca Harmônica Hohner Silver Star 504/20 Com Estojo C (Dó)">
         <div class="card-body">
         <h5 class="card-title">Gaita De Boca Harmônica Hohner Silver Star 504/20 Com Estojo C (Dó)</h5>
@@ -261,7 +263,7 @@
         </a>
 </div>
 <div class="card">
-    <a href="#"class="card-clickable">
+    <a href="#!"class="card-clickable">
         <img src="https://images.tcdn.com.br/img/img_prod/1033692/90_guitarra_stratocaster_tagima_2s_1h_fx_escala_escura_escudo_bk_sixmart_mdsv_17355_1_80cc1fea2eceb53adac8282ad836b524.jpg" class="card-img-top" alt="GUITARRA STRATOCASTER TAGIMA 2S 1H FX ESCALA ESCURA ESCUDO BK SIXMART MDSV">
         <div class="card-body">
         <h5 class="card-title">GUITARRA STRATOCASTER TAGIMA 2S 1H FX ESCALA ESCURA ESCUDO BK SIXMART MDSV</h5>
@@ -280,7 +282,7 @@
 <div class="produtos">
   
   <div class="card">
-    <a href="#"class="card-clickable">
+    <a href="#!"class="card-clickable">
             <img src="https://images.tcdn.com.br/img/img_prod/1033692/90_guitarra_stratocaster_tagima_2s_1h_fx_escala_escura_escudo_bk_sixmart_mdsv_17355_1_80cc1fea2eceb53adac8282ad836b524.jpg" class="card-img-top" alt="GUITARRA STRATOCASTER TAGIMA 2S 1H FX ESCALA ESCURA ESCUDO BK SIXMART MDSV">
             <div class="card-body">
               <h5 class="card-title">GUITARRA STRATOCASTER TAGIMA 2S 1H FX ESCALA ESCURA ESCUDO BK SIXMART MDSV</h5>
@@ -291,7 +293,7 @@
     </div>
 
     <div class="card">
-        <a href="#"class="card-clickable">
+        <a href="#!"class="card-clickable">
             <img src="https://madeinbrazil.fbitsstatic.net/img/p/encordoamento-violao-martin-aco-ma535fx-011-authentic-acoustic-flexible-core-phosphor-bronze-129319/342380.jpg?w=800&h=800&v=no-value" class="card-img-top" alt="Encordoamento Violão Martin Aço MA535FX 011 Authentic Acoustic Flexible Core Phosphor Bronze">
             <div class="card-body">
                 <h5 class="card-title">Encordoamento Violão Martin Aço MA535FX 011 Authentic Acoustic Flexible Core Phosphor Bronze</h5>
@@ -302,7 +304,7 @@
     </div>
 
     <div class="card">
-        <a href="#"class="card-clickable">
+        <a href="#!"class="card-clickable">
             <img src="https://images.tcdn.com.br/img/img_prod/1033692/90_piano_digital_fp_10_bk_roland_88_teclas_c_estante_partitura_8913_2_da4b0fc226fbe400c4897d3997777c76.jpg" class="card-img-top" alt="Piano Digital Roland FP-10 Preto Com Estante de Partitura">
             <div class="card-body">
                 <h5 class="card-title">Piano Digital Roland FP-10 Preto Com Estante de Partitura</h5>
@@ -313,7 +315,7 @@
     </div>
 
     <div class="card">
-        <a href="#"class="card-clickable">
+        <a href="#!"class="card-clickable">
             <img src="https://madeinbrazil.fbitsstatic.net/img/p/violao-tagima-eletroacustico-aco-new-england-eq-dkmop-130651/343721-1.jpg?w=800&h=800&v=no-value" class="card-img-top" alt="Violão Tagima Eletroacústico Aço New England EQ DKMOP">
             <div class="card-body">
                 <h5 class="card-title">Violão Tagima Eletroacústico Aço New England EQ DKMOP</h5>
@@ -335,7 +337,7 @@
     <!-- Section: Social media -->
   
     <!-- Section: Links  -->
-    <section class="">
+    <section>
       <div class="container text-center text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">

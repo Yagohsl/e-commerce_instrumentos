@@ -43,6 +43,9 @@
 .menu-item:hover{
     background-color: transparent;
 }
+.icons{
+    display: flex;
+}
 
 
 
@@ -53,8 +56,112 @@
     justify-content:flex-start; /* Alinha horizontalmente */
     flex-wrap: wrap; /* Para permitir que os cards quebrem para uma nova linha, se necessário */
 }
-
 .card-title{
     font-size: 1.2rem;
 }
-    
+.offcanvas-body,.offcanvas-header{
+    background-color: #1b1b1b;
+}
+.side-menu{
+    background-color: #333333;
+    width: 15%;
+
+}
+.menu-title{
+}
+.img-close{
+    width: 50px;
+}
+@media (max-width:2040px){
+    .side-menu{
+        display: none;
+    }
+}
+@media(max-width:1170px){
+    .menu-title{
+        font-size: 1.1rem;
+    }
+    .form-check-label{
+        font-size:0.8rem;
+    }
+    .card{
+        width: 14rem;
+        height:26rem;
+    }
+    .card-title{
+        font-size: 1rem;
+    }
+    .card-img-top{
+        margin-left: 18px;
+        width:180px
+    }
+}
+@media(max-width:900px){
+    .clean-filter{
+        font-weight: bold;
+        margin-top:20px
+    }
+    .menu-title{
+        font-size: 1rem;
+    }
+    .form-check-label,.nav-menu{
+        font-size:0.8rem;
+    }
+    .card{
+        font-size: 0.8rem;
+        width: 12rem;
+        height:24rem;
+    }
+    .card-title{
+        font-size: 0.9rem;
+    }
+    .card-img-top{
+        margin-left: 10px;
+        width:170px;
+    }
+}
+@media(max-width:800px){
+    .menu-title{
+        font-size: 0.9rem;
+    }
+    .form-check-label,.nav-menu,.clean-filter{
+        font-size:0.8rem;
+    }
+    .clean-filter{
+        font-weight: bold;
+        margin-top:20px
+    }
+    .img-user{
+        margin-left: 1%;
+      }
+      .img-cart{
+        margin-left: -3%;
+      }
+
+
+}
+@media(max-width:768px){
+    .clean-filter{
+        width:99%
+    }
+    .menu-title{
+        align-items: center;
+        margin-right: 8px;
+    }
+    .card-title{
+        font-size: 0.8rem;
+    }
+    .card{
+        height: 20rem;
+    }
+    .card-img-top{
+        margin-left: 25px;
+        width: 140px;
+    }
+    .side-menu{
+        display:flex;
+    }
+    .menu-left{
+        display:none;
+    }
+}
