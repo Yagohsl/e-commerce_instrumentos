@@ -1,1 +1,2 @@
 Adicionar responsividade em cadastro e login
+Arrumar Cards no Index
