@@ -456,3 +456,27 @@ margin-bottom: 3%;
     font-size: 0.7rem;
   }
 }
+@media(max-width:392px){
+  .texto-1{
+    font-size: 0.9rem;
+  }
+  .navbar-toggler{
+    width:4rem;
+  }
+  .texto-2{
+    margin-top:10px;
+    width:40%
+  }
+  .card{
+    margin-right:5px;
+  }
+}
+@media(max-width:359px){
+  .texto-1{
+    font-size:0.8rem;
+  }
+  .texto-2{
+    margin-top:10px;
+    width:40%
+  }
+}

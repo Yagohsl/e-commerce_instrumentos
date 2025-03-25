@@ -5,3 +5,36 @@
     color: #fff;
     text-decoration: none;
 }
+@media(max-width: 692px){
+    .title-bold{
+        font-size:1.4rem;
+    }
+    .content{
+        margin:10% 20%;
+    }
+    p{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 547px){
+    .title-bold{
+        font-size:1.4rem;
+    }
+    .content{
+        margin:10% 10%;
+    }
+    p{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+@media(max-width:490px){
+    .title-bold{
+        font-size: 1.2rem;
+    }
+    p,label,.form-control{
+        font-size:0.8rem;
+    }
+}
