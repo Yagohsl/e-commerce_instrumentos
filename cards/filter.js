@@ -62,17 +62,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //LIMPA FILTRO
 
-document.querySelector(".clean-filter").addEventListener("click", function () {
-    // Desmarca todos os checkboxes e radio buttons
-    document.querySelectorAll(".form-check-input").forEach(input => input.checked = false);
+document.querySelectorAll(".clean-filter").forEach(button => {
+    button.addEventListener("click", function () {
+        // Desmarca todos os checkboxes e radio buttons
+        document.querySelectorAll(".form-check-input").forEach(input => input.checked = false);
 
-    // Exibe todos os produtos novamente
-    document.querySelectorAll(".card").forEach(card => card.style.display = "flex");
-});
+        // Exibe todos os produtos novamente
+        document.querySelectorAll(".card").forEach(card => card.style.display = "flex");
 
-document.querySelector(".clean-filter").addEventListener("click", function () {
-    // Recarrega a página
-    location.reload();
+  
+            location.reload();
+
+    });
 });
 // Função para pegar o parâmetro 'search' da URL
 function getQueryParam(param) {
