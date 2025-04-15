@@ -40,7 +40,9 @@ O trabalho consiste em um site de venda de instrumentos musicais, com páginas p
 <h4>Além disso existe a filtragem de itens na lateral esquerda da tela, onde é possível organizar por categoria, preço ou marca.</h4>
 
 ![gif mostrando a filtragem de produtos](https://github.com/user-attachments/assets/478ed344-1334-4b71-bbfb-7778972a88a3)
+<h4>Estas foram as partes principais do projeto. Se quiser explorar mais, contribuir ou utilizá-lo fique à vontade!</h4>
 <h1>👦💻Autor:</h1>
 Desenvolvido por <a href="https://github.com/yagohsl">Yago Lima</a>
-
+<h1>📄Licença</h1>
+Este projeto está sob a licença MIT.
 
